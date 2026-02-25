@@ -1,12 +1,11 @@
 # Simulado CSA (300 questões)
+## Repositório ORIGINAL https://github.com/geporto-dev/simulado-csaxanadu ##
 
 Uma aplicação web **estática** (HTML/CSS/JS) para simulado com 4 blocos de 75 questões. Uma questão por página, sem feedback imediato. No final, calcula acertos, mostra **APROVADO** (≥80%) ou **REPROVADO**, e exibe o **gabarito** (respostas marcadas vs corretas).
 
-## Arquivos
-- `index.html` — página inicial e fluxo de simulado
-- `styles.css` — estilos básicos
-- `script.js` — lógica do simulador
-- `questions.json` — base de 300 questões extraída do seu DOCX
+## COMO INICIAR:
+
+- <img width="857" height="358" alt="image" src="https://github.com/user-attachments/assets/19209942-083a-4781-92d2-9aa568acfa09" />
 
 ## Como executar localmente
 1. Faça download de todos os arquivos numa mesma pasta.
