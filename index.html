@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simulado CSA — 300 questões</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Simulado CSA</h1>
+    <p>Escolha um bloco de 75 questões e inicie o simulado. Uma questão por página. Resultado no final.</p>
+  </header>
+
+  <main id="app">
+    <section id="setup">
+      <h2>Configuração</h2>
+      <div class="card">
+        <label for="block">Bloco:</label>
+        <select id="block">
+          <option value="1">Bloco 1 (Q1–Q75)</option>
+          <option value="2">Bloco 2 (Q76–Q150)</option>
+          <option value="3">Bloco 3 (Q151–Q225)</option>
+          <option value="4">Bloco 4 (Q226–Q300)</option>
+        </select>
+        <button id="startBtn" class="primary">Iniciar simulado</button>
+      </div>
+    </section>
+
+    <section id="quiz" class="hidden">
+      <div class="status">
+        <span id="progress"></span>
+      </div>
+      <div id="questionCard" class="card"></div>
+      <div class="nav">
+        <button id="prevBtn" class="secondary">← Voltar</button>
+        <button id="nextBtn" class="secondary">Avançar →</button>
+        <button id="finishBtn" class="primary">Finalizar</button>
+      </div>
+    </section>
+
+    <section id="result" class="hidden">
+      <div class="card">
+        <h2>Resultado</h2>
+        <p id="scoreText"></p>
+        <p id="passFail"></p>
+      </div>
+      <div class="card">
+        <h3>Gabarito</h3>
+        <table id="answerTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Pergunta</th>
+              <th>Sua resposta</th>
+              <th>Correta</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="nav">
+        <button id="restartBtn" class="secondary">Reiniciar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2026 — Simulado CSA. Feito com HTML/JS estático.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
